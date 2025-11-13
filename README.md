@@ -29,6 +29,15 @@ This is a PoC demonstrator, I dont want to get sued.
 This is a payload for v1.2 [Y2JB](https://github.com/Gezine/Y2JB)
 It will just crash in its current state, nothing useful. However at this point it does demonstrate UAF and RIP control around ~20% of runs.
 
+A successful run of this currently ends with this output, followed by a crash. Unsuccessfuly runs crash during the timing ROP or spray region.
+```
+[7] resume t3
+    resume: 0x0000000000000000
+    waiting for t3 to return...``
+```
+
+
+
 ## Credits
   *   Original CVE by [theflow0](https://hackerone.com/reports/2900606)
   *   Lots of inspiration from Lapse
