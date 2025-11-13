@@ -554,12 +554,12 @@
         await log("    total: " + total_allocs);
         await log("");
         await log("t3 stack: " + toHex(t3_stack));
-        let addr_list = "spray: ";
-        for (let i = 0; i < spray_addresses.length; i++) {
-            addr_list += toHex(spray_addresses[i]);
-            if (i < spray_addresses.length - 1) addr_list += ",";
-        }
-        await log(addr_list);
+        //let addr_list = "spray: ";
+        //for (let i = 0; i < spray_addresses.length; i++) {
+        //    addr_list += toHex(spray_addresses[i]);
+        //    if (i < spray_addresses.length - 1) addr_list += ",";
+        //}
+        //await log(addr_list);
         
         await log("[7] resume t3");
         const resume_result = syscall(SYSCALL.thr_resume_ucontext, tid3);
